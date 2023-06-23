@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Animais Fantásticos</title>
 </head>
 
 <body>
 
-  <nav class="menu">
+  <nav class="menu js-menu">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -21,9 +22,9 @@
   </nav>
 
 
-  <section class="grid-section animais" id="animais">
+  <section class="grid-section animais js-scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista">
+    <ul class="animais-lista js-tabmenu">
       <li>
         <img src="./assets/img/imagem1.jpg">
       </li>
@@ -43,7 +44,7 @@
         <img src="./assets/img/imagem6.jpg">
       </li>
     </ul>
-    <div class="animais-descricao">
+    <div class="animais-descricao js-tabcontent">
       <section>
         <h2>Raposa</h2>
         <p>A raposa é um animal conhecido por sua astúcia e adaptabilidade. Ela pertence à família dos canídeos e é
@@ -100,32 +101,32 @@
     </div>
   </section>
 
-  <section class="grid-section faq" id="faq">
+  <section class="grid-section faq js-scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista">
-      <dt>Qual a idade dos animais?</dt>
+    <dl class="faq-lista js-accordion">
+      <dt class="js-alterarCorBefore">Qual a idade dos animais?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
 
-      <dt>Eles são fantásticos?</dt>
+      <dt class="js-alterarCorBefore">Eles são fantásticos?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
 
-      <dt>Qual a diferença?</dt>
+      <dt class="js-alterarCorBefore">Qual a diferença?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
 
-      <dt>Como proteger?</dt>
+      <dt class="js-alterarCorBefore">Como proteger?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
     </dl>
   </section>
 
-  <section class="grid-section contato" id="contato">
+  <section class="grid-section contato js-scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="./assets/img/mapa.png">

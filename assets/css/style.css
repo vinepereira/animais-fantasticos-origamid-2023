@@ -37,8 +37,27 @@ body {
 }
 
 .menu li a {
-  display: block;
-  padding: 10px;
+  position: relative;
+  display: flex;
+}
+
+.menu li a::after {
+  content: '';
+  background-color: saddlebrown;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 10px;
+  transition: 0.2s;
+}
+
+.menu li a:hover::after {
+  width: calc(100% - 20px);
+}
+
+.menu li a {
+  /* display: block; */
+  padding: 15px 10px;
   margin-right: 10px;
   color: #222;
   text-decoration: none;
@@ -98,6 +117,15 @@ body {
   grid-column: 2;
 }
 
+.animais-lista li {
+  transition: transform .3s ease-in-out;
+}
+
+.animais-lista li:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+}
+
 .animais-lista::-webkit-scrollbar {
   width: 18px;
 }
@@ -130,6 +158,7 @@ body {
   margin-top: 2rem;
   margin-bottom: .5rem;
   color: #e54;
+  cursor: pointer;
 }
 
 .faq-lista dt::before {
@@ -220,4 +249,70 @@ body {
   .copy {
     margin-bottom: 0;
   }
+}
+
+.js .js-tabcontent section {
+  /* display: none; */
+  visibility: hidden;
+  position: absolute;
+}
+
+.js .js-tabcontent section.ativo {
+  /* display: block; */
+  visibility: initial;
+  position: static;
+  animation: show .3s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js .js-accordion dt::after {
+  content: '⮧';
+  margin-left: 10px;
+}
+
+.js .js-accordion dt.ativo::after {
+  content: '⮥';
+}
+
+.js .js-accordion dd {
+  display: none;
+}
+
+.js .js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
