@@ -12,7 +12,7 @@
 
 <body>
 
-  <nav class="menu js-menu">
+  <nav class="menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -22,9 +22,9 @@
   </nav>
 
 
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais" data-anime="scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
+    <ul class="animais-lista" data-tab="menu">
       <li>
         <img src="./assets/img/imagem1.jpg">
       </li>
@@ -44,8 +44,8 @@
         <img src="./assets/img/imagem6.jpg">
       </li>
     </ul>
-    <div class="animais-descricao js-tabcontent">
-      <section>
+    <div class="animais-descricao" data-tab="content">
+      <section data-anime="show-down">
         <h2>Raposa</h2>
         <p>A raposa é um animal conhecido por sua astúcia e adaptabilidade. Ela pertence à família dos canídeos e é
           conhecida por sua pelagem densa e cauda felpuda.</p>
@@ -54,7 +54,7 @@
           frutas.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Esquilo</h2>
         <p>O esquilo é um pequeno mamífero arborícola conhecido por sua agilidade e habilidade em escalar árvores.</p>
         <p>Existem várias espécies de esquilos em todo o mundo, e eles são encontrados em diferentes habitats, desde
@@ -65,7 +65,7 @@
           os períodos de escassez.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Urso</h2>
         <p>Os ursos são mamíferos grandes e poderosos que estão espalhados por várias regiões do mundo.</p>
         <p> Existem diferentes espécies de ursos, como o urso-pardo, o urso-negro e o urso-polar.</p>
@@ -74,7 +74,7 @@
         <p>Além disso, eles são conhecidos por seu comportamento solitário ou em pequenos grupos familiares.</p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Lobo</h2>
         <p>O lobo é um mamífero carnívoro e social que pertence à família dos canídeos. Os lobos são animais altamente
           adaptáveis e são encontrados em uma variedade de habitats, desde florestas até tundras e estepes.</p>
@@ -83,7 +83,7 @@
           outros animais de porte médio.</p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Macaco</h2>
         <p>Os macacos são mamíferos primatas que exibem uma ampla variedade de espécies e comportamentos.</p>
         <p>Eles são encontrados em diferentes partes do mundo, desde florestas tropicais até savanas e montanhas.</p>
@@ -91,7 +91,7 @@
           que os auxiliam no movimento nas árvores.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Leão</h2>
         <p>O leão é um dos maiores felinos do mundo e é conhecido como o "rei da selva". Os leões são encontrados em
           regiões da África e apresentam uma estrutura social complexa, vivendo em grupos chamados de coalizões. </p>
@@ -101,32 +101,32 @@
     </div>
   </section>
 
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq" data-anime="scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
-      <dt class="js-alterarCorBefore">Qual a idade dos animais?</dt>
+    <dl class="faq-lista" data-anime="accordion">
+      <dt>Qual a idade dos animais?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
 
-      <dt class="js-alterarCorBefore">Eles são fantásticos?</dt>
+      <dt>Eles são fantásticos?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
 
-      <dt class="js-alterarCorBefore">Qual a diferença?</dt>
+      <dt>Qual a diferença?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
 
-      <dt class="js-alterarCorBefore">Como proteger?</dt>
+      <dt>Como proteger?</dt>
       <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum neque ea, modi voluptate cupiditate
         accusamus quis consectetur quos pariatur iure, inventore incidunt placeat ipsam necessitatibus, aspernatur
         officia. Iusto, nihil!</dd>
     </dl>
   </section>
 
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato" data-anime="scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="./assets/img/mapa.png">
@@ -143,7 +143,8 @@
   <footer class="copy">
     <p>Todos os direitos reservados.</p>
   </footer>
-  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>
