@@ -1,0 +1,30 @@
+.js [data-semana]::after {
+  display: inline-block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 1px solid #000;
+  animation: moviment 3s cubic-bezier(.42, 0, .58, 1) infinite;
+}
+
+[data-semana].aberto::after {
+  background-color: #3f4;
+  animation: moviment 3s cubic-bezier(.42, 0, .58, 1) infinite;
+}
+
+@keyframes moviment {
+  0% {
+    transform: scale(1) translateZ(0);
+  }
+
+  50% {
+    transform: scale(1.2) translateZ(0);
+  }
+
+  100% {
+    transform: scale(1) translateZ(0);
+  }
+}
